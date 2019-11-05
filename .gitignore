@@ -1,0 +1,49 @@
+# Concord Signage Board GITIGNORE #
+# Ignore OS files #
+# =============== #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+# Ignore logs and databases #
+# ========================= #
+*.log
+*.sql
+error_log
+access_log
+
+# Ignore everything in "wp-content" except the "plugins" and "themes" directories. #
+# ================================================================================ #
+/*
+!.gitignore
+!plugins/
+plugins/akismet/*
+!themes/
+!README.md
+
+# Ignore everything in "plugins" except certain plugins. #
+# ========================================================== #
+plugins/*
+!plugins/clt-functionality/
+
+# Ignore everything in "themes" except the active theme. #
+# ====================================================== #
+themes/*
+!themes/cp-signage-board/
+
+# Ignore npm packages #
+# =================== #
+themes/cp-signage-board/node_modules/*
+
+# Ignore build files #
+# ================== #
+themes/cp-signage-board/gulpfile.js
+themes/cp-signage-board/build/*
+themes/cp-signage-board/style.css
+themes/cp-signage-board/package.json
+themes/cp-signage-board/package-lock.json
