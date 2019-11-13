@@ -18,7 +18,7 @@ get_header(); ?>
           <?php 
           $getImage = CFS()->get('box_left_image');
           $getText = CFS()->get('box_left_text');
-          $boxLeftImage = "<img class='pdf-file' src='" .  $getImage . "' alt='Image1' />"; 
+          $boxLeftImage = $getImage; 
           $boxLeftText = "<h3 class='box-text'>" . $getText . "</h3>";   
           //check if the custom field has a value 
           if( $getImage == '') {
@@ -35,7 +35,7 @@ get_header(); ?>
         <?php 
           $getImage = CFS()->get('box_right_image');
           $getText = CFS()->get('box_right_text');
-          $boxRightImage = "<img class='pdf-file' src='" .  $getImage . "' alt='Image2' />"; 
+          $boxRightImage = $getImage; 
           $boxRightText = "<h3 class='box-text'>" . $getText . "</h3>";   
           //check if the custom field has a value 
           if( $getImage == '') {
