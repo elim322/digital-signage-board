@@ -615,8 +615,9 @@ body {
   color: #fff; }
 
 .header-image {
-  width: 8%;
-  height: 8%; }
+  width: 10%;
+  height: 10%;
+  margin: 1rem; }
 
 .main-title {
   color: #ffe5a9;
@@ -633,6 +634,8 @@ body {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   max-width: 45%;
+  width: 750px;
+  height: 700px;
   height: auto;
   padding: 1.5rem; }
   .pdf-container p {
@@ -669,8 +672,7 @@ body {
 .pdf-subtitle {
   text-align: center;
   color: #fff;
-  font-size: 1.5rem;
-  text-decoration: underline; }
+  font-size: 1.5rem; }
 
 .pdf-file {
   max-width: 100%; }
