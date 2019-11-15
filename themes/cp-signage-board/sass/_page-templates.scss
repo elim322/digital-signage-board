@@ -11,8 +11,9 @@ body {
 
 .site-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
     margin-bottom: 1rem;
 }
 
@@ -51,6 +52,9 @@ body {
     max-width: 45%;
     height: auto;
     padding: 1.5rem;
+    p {
+        color: #fff;
+    }
 }
 
 // section {
@@ -59,7 +63,8 @@ body {
 .pdf-documents {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 1rem;
     width: 100%;
 }
 
