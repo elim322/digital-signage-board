@@ -20,22 +20,11 @@
 		<div id="page" class="hfeed site">
 			<header id="masthead" class="site-header" role="banner">
       <div class="header-title">
-      <h1 class="main-title"><?php echo esc_html(CFS()->get('main_title'))?></h1>
-      <h2 class="sub-title"><?php echo esc_html(CFS()->get('sub_title'))?></h2>
-</div>
-			<?php 
-          $getImage = CFS()->get('header_logo_2_image');
-          $getText = CFS()->get('header_logo_2_text');
-          $headerLogoTwoImage = "<img class='header-image' src='" .  $getImage . "' alt='header-logo-2' />"; 
-          $headerLogoTwoText = "<h1 class='header-logo-text'>" . $getText . "</h1>";   
-          //check if the custom field has a value 
-          if( $getImage == '') {
-            echo $headerLogoTwoText;
-          } else {
-            echo $headerLogoTwoImage;
-          } 
+        <img class="main-logo" src="<?php echo esc_html(CFS()->get('title_logo'))?>" alt='header-logo'/>
+      </div>
+      <img class='header-image' src='<?php echo esc_html(CFS()->get('header_logo_2_image'))?>' alt='header-logo-2' />; 
  
-          ?>
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
