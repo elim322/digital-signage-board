@@ -20,10 +20,24 @@
 		<div id="page" class="hfeed site">
 			<header id="masthead" class="site-header" role="banner">
       <div class="header-title">
-        <img class="main-logo" src="<?php echo esc_html(CFS()->get('title_logo'))?>" alt='header-logo'/>
-      </div>
-      <img class='header-image' src='<?php echo esc_html(CFS()->get('header_logo_2_image'))?>' alt='header-logo-2' />; 
- 
+      <?php 
+      $getImage = CFS()->get('title_logo');
+      $imageValue = "<img class='main-logo' src='" . $getImage . "' />";
+      if($getImage == '') {
+        null;
+      } else {
+        echo $imageValue;
+      }
+ ?>      </div>
+      <?php 
+      $getImage = CFS()->get('header_logo_2_image');
+      $imageValue = "<img class='header-image' src='" . $getImage . "' />";
+      if($getImage == '') {
+        null;
+      } else {
+        echo $imageValue;
+      }
+ ?>
 
 			</header><!-- #masthead -->
 
